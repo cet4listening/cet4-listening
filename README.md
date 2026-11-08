@@ -6,7 +6,7 @@
 
 ## 怎么用
 
-- **主地址（推荐，GitHub Pages）**：**https://zhixiao-xjy.github.io/cet4-listening/** —— 永久在线、不依赖任何电脑开机，手机 / iPad / 电脑都能访问，支持 HTTP Range（进度条拖动、跳篇都正常）。代码仓库：https://github.com/ZHIXIAO-XJY/cet4-listening
+- **主地址（推荐，GitHub Pages）**：**https://cet4listening.github.io/cet4-listening/** —— 永久在线、不依赖任何电脑开机，手机 / iPad / 电脑都能访问，支持 HTTP Range（进度条拖动、跳篇都正常）。代码仓库：https://github.com/cet4listening/cet4-listening
 - **备用地址（Surge 镜像）**：**https://cet4-listening.surge.sh** —— 同一站点的镜像，同样支持 Range。注意 Surge 免费版在账号异常时可能「暂停」站点（返回 403），此时用上面的主地址即可。
   账号、密码、token 和「以后怎么更新」写在项目根目录的 `网站账号信息.md` 里。
 - **更新 GitHub Pages 主地址**（改完文件后）：
