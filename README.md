@@ -6,10 +6,10 @@
 
 ## 怎么用
 
-- **主地址（推荐，Surge）**：**https://cet4-listening.surge.sh** —— 永久在线、不依赖任何电脑开机，手机 / iPad / 电脑都能访问，支持 HTTP Range（进度条拖动、跳篇都正常）。
-- **备用地址（GitHub Pages）**：**https://zhixiao-xjy.github.io/cet4-listening/** —— 同一个站点的镜像；代码仓库：https://github.com/ZHIXIAO-XJY/cet4-listening
+- **主地址（推荐，GitHub Pages）**：**https://zhixiao-xjy.github.io/cet4-listening/** —— 永久在线、不依赖任何电脑开机，手机 / iPad / 电脑都能访问，支持 HTTP Range（进度条拖动、跳篇都正常）。代码仓库：https://github.com/ZHIXIAO-XJY/cet4-listening
+- **备用地址（Surge 镜像）**：**https://cet4-listening.surge.sh** —— 同一站点的镜像，同样支持 Range。注意 Surge 免费版在账号异常时可能「暂停」站点（返回 403），此时用上面的主地址即可。
   账号、密码、token 和「以后怎么更新」写在项目根目录的 `网站账号信息.md` 里。
-- **更新 GitHub Pages 备份**（改完文件后）：
+- **更新 GitHub Pages 主地址**（改完文件后）：
 
   ```powershell
   cd cet4-listening
@@ -20,7 +20,7 @@
 
   推上去后 GitHub 会自动重新构建，1–2 分钟后生效。
 - **离线用**：双击 `index.html`（Chrome / Edge / Firefox 均可）。音频在 `audio/` 目录，相对路径加载，断网也能播。
-- **更新 Surge 主地址**（只传变化的部分，几秒到几分钟）：
+- **更新 Surge 镜像**（只传变化的部分，几秒到几分钟）：
 
   ```powershell
   $env:SURGE_TOKEN = "441611009fafdcd60dda5a685a673cf5"
@@ -94,4 +94,4 @@ cet4-listening/
 - 音频是转码后的 96kbps 单声道，够听清但非原始音质；每套约 16MB，12 套共约 200MB。
 - 材料级时间轴（8 段）来自站点的段落标注，不是逐题精确切点，所以「逐题跳听」会跳到该材料开头。
 - 题目版权归原出版方，本页面仅供个人学习使用，请勿商用或再分发。
-- 线上托管：主地址 Surge 免费版（单项目 450MB / 10,100 文件，当前 194MB 余量充足）；备用 GitHub Pages（仓库 <1GB、单文件 <100MB）。两边都不依赖本机开机。
+- 线上托管：主地址 GitHub Pages（仓库 <1GB、单文件 <100MB），备用镜像 Surge 免费版（450MB / 10,100 文件，当前 194MB）。两边都不依赖本机开机。
