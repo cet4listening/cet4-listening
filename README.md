@@ -6,8 +6,19 @@
 
 ## 怎么用
 
-- **正常用（推荐）**：直接打开 **https://cet4-listening.surge.sh** —— 永久在线，不依赖任何电脑开机，手机 / iPad / 电脑都能访问，进度条拖动和跳篇都正常。
+- **主地址（推荐，GitHub Pages）**：**https://zhixiao-xjy.github.io/cet4-listening/** —— 永久在线、不依赖任何电脑开机，手机 / iPad / 电脑都能访问，支持 HTTP Range（进度条拖动、跳篇都正常）。代码仓库：https://github.com/ZHIXIAO-XJY/cet4-listening
+- **备用地址（Surge）**：**https://cet4-listening.surge.sh** —— 同一个站点的镜像。注意：Surge 免费账号需完成邮箱验证，未验证时站点会被暂停（403）；收到 `805352942@qq.com` 的验证邮件点一下即可恢复。
   账号、密码、token 和「以后怎么更新」写在项目根目录的 `网站账号信息.md` 里。
+- **更新 GitHub Pages**（改完文件后）：
+
+  ```powershell
+  cd cet4-listening
+  git add -A
+  git commit -m "更新内容"
+  git push          # 若网络需要代理：git -c http.proxy=http://127.0.0.1:7890 push
+  ```
+
+  推上去后 GitHub 会自动重新构建，1–2 分钟后生效。
 - **离线用**：双击 `index.html`（Chrome / Edge / Firefox 均可）。音频在 `audio/` 目录，相对路径加载，断网也能播。
 - **改完之后更新线上**（几秒到几分钟，只传变化的文件）：
 
